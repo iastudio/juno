@@ -1,11 +1,5 @@
 
-// Placeholder styling mixin
-@mixin placeholder {
-  ::-webkit-input-placeholder {@content}
-  :-moz-placeholder           {@content}
-  ::-moz-placeholder          {@content}
-  :-ms-input-placeholder      {@content}
-};
+@import "utils";
 
 // libs
 @import "photoshop-drop-shadow";
@@ -28,7 +22,9 @@
 @import "lightbox";
 
 // Elements
+@import "top-bar";
 @import "header";
+@import "navigation";
 @import "footer";
 
 *, *:before, *:after {
@@ -38,11 +34,11 @@
 }
 
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 	background: $bg-color;
 	line-height: 150%;
 	font-size: $text-size;
-
+  font-size: 16px;
 	min-width: 960px;
 }
 

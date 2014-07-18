@@ -1,0 +1,101 @@
+$top-bar-height: 47px;
+
+.top-bar {
+  height: $top-bar-height;
+  background-color: #333;
+
+  nav {
+    ul {
+      li {
+        float: left;
+
+        &.active a, a:hover {
+          background-color: lighten(#333, 5%);
+        }
+
+        // &:last-child a {
+        //   border-right: 1px solid #4A504E;
+        // }
+
+        &.top-bar__social {
+          color: #999;
+          font-size: 13px;
+          text-decoration: none;
+          line-height: $top-bar-height;
+          border-left: 1px solid #4A504E;
+          border-right: 1px solid #4A504E;
+          padding: 0 29px;
+
+          span {
+            display: block;
+            float: left;
+            margin-right: 10px;
+          }
+
+          a {
+            padding: 0;
+            border: none;
+            display: inline-block;
+            float: left;
+            width: 19px; height: 19px;
+            background-color: #fff;
+            border-radius: 3px;
+            padding: 0;
+            margin: 14px 5px;
+            font-size: 12px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFF;
+
+            &:before {
+              display: none;
+            }
+
+            &:hover {
+              opacity: .8;
+            }
+
+            &.vk {
+              background-color: #4d6d91;
+              @include background-image(linear-gradient(to bottom, #4d6d91 0%, #597b9f 100%));
+              text-shadow: 0 1px 0 #25436e;
+            }
+            &.fb {
+              background-color: #4d69a2;
+              @include background-image(linear-gradient(to bottom, #4d69a2 0%, #3a4b7b 100%));
+              text-shadow: 0 1px 0 darken(#2f477a, 10%);
+            }
+            &.tw {
+              background-color: #54abed;
+              @include background-image(linear-gradient(to bottom, #54abed 0%, #3b88c3 100%));
+              text-shadow: 0 1px 0 darken(#3b88c3, 10%);
+            }
+          }
+        }
+
+        a {
+          color: #999;
+          font-size: 13px;
+          text-decoration: none;
+          display: block;
+          height: $top-bar-height;
+          line-height: $top-bar-height;
+          padding: 0 20px;
+          border-left: 1px solid #4A504E;
+          @include transition(all .2s ease);
+
+          &:before {
+            display: inline-block;
+            margin-right: 5px;
+            position: relative;
+            top: -2px;
+            width: 5px;
+            height: 5px;
+            background-color: #f7b900;
+            content: ' ';
+          }
+        }
+      }
+    }
+  }
+}

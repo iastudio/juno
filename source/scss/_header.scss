@@ -1,3 +1,35 @@
 header {
+  height: 135px;
+  background-color: #fff;
+  @include cf();
 
+  .header__logo {
+    display: block;
+    float: left;
+    width: 220px; height: 68px;
+    margin-top: 32px;
+    margin-left: 35px;
+    background-image: url(../i/logo.png);
+    background-image: url(../i/logo.svg), none;
+    background-size: auto;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .header__phone {
+    width: 200px; height: 40px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 45px;
+    small {
+      font-size: 13px;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1;
+    }
+  }
 }
