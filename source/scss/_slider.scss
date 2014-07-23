@@ -1,9 +1,23 @@
+@include keyframes(spinner) {
+  0% {
+    stroke-dashoffset: 50;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 #slider-hero {
   height: 615px;
   margin-top: -85px;
   overflow: hidden;
   position: relative;
   z-index: 0;
+
+  #slider__dots__content {
+    display: none;
+    visibility: hidden;
+  }
 
   ul.slider__dots {
     display: block;
@@ -30,7 +44,13 @@
 
 
         &.active svg .bar {
-          stroke-dashoffset: 0;
+          //stroke-dashoffset: 0;
+          @include animation(spinner 4000ms linear infinite alternate);
+        }
+
+        &.reset svg .bar {
+          //@include transition(none);
+          //stroke-dashoffset: 50;
         }
 
         svg {
@@ -40,7 +60,7 @@
 
           .bar {
             stroke-dashoffset: 50;
-            @include transition(stroke-dashoffset 4000ms linear);
+            //@include transition(stroke-dashoffset 4000ms linear);
             stroke-width: 3px;
             stroke: #E6E6E6;
           }
