@@ -24,6 +24,7 @@
 // Elements
 @import "top-bar";
 @import "header";
+@import "slider";
 @import "navigation";
 @import "footer";
 
@@ -39,7 +40,7 @@ body {
 	line-height: 150%;
 	font-size: $text-size;
   font-size: 16px;
-	min-width: 960px;
+	min-width: 1100px;
 }
 
 a[href^=tel]{

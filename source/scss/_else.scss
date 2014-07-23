@@ -1,0 +1,7 @@
+.content {
+  min-height: 1097px;
+  padding: 30px;
+  margin-top: -140px;
+  background-color: #fff;
+  @include box-shadow(0 0 43px rgba(128,92,47,.35));
+}

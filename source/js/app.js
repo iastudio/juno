@@ -1,5 +1,85 @@
 
 (function(){
+
+  /////////////////
+  //    SLIDER   //
+  /////////////////
+
+  var autoSlider = true;
+  var sliderSpeed = 4000;
+  var sliderFadeSpeed = 500;
+  var sliderEasing = 'linear';
+
+  (function(){
+    if ($('#slider-hero .slider__item').length > 0) {
+      if ($('#slider-hero').attr('data-count') == undefined)
+        $('#slider-hero').attr('data-count', 0);
+      var count = parseInt($('#slider-hero').attr('data-count'));
+      var slidesCount = $('#slider-hero .slider__item').size()-1;
+
+      $('#slider-hero .slider__item').each(function() {
+        var li = document.createElement('li');
+        var content = document.getElementById('slider__dots__content').childNodes[1].cloneNode(true);
+        $(li).appendTo('ul.slider__dots').append(content);
+      });
+    }
+
+    $('#slider-hero .slider__nav').on('click', function(e) {
+      e.preventDefault();
+      if ($('#slider-hero .slider__item:animated').size()>0) return;
+
+      var direction;
+      $(this).hasClass('slider__nav--next') ? direction = 1 : direction = 0;
+
+      if (direction == 0)
+        (count == 0) ? count = slidesCount + 1 : count = count;
+      else
+        (count == slidesCount) ? count = - 1 : count = count;
+
+      $('#slider-hero .slider__item.active').fadeOut(sliderFadeSpeed, sliderEasing, function() {
+        $(this).removeClass('active');
+        (direction == 1) ? count++ : count--;
+        $('#slider-hero .slider__item').eq(count).fadeIn(sliderFadeSpeed, sliderEasing);
+        $('#slider-hero .slider__item').eq(count).addClass('active');
+        $('#slider-hero .slider__menu li.active').removeClass('active');
+        $('#slider-hero .slider__menu li').eq(count).addClass('active');
+        $('#slider-hero').attr('data-count', count);
+      });
+    });
+
+    if (autoSlider) {
+
+      // $("#slider-spinner").appendTo(".orbit-bullets li.active");
+
+      // setInterval(function() { //Animating spinner
+      //     var val = parseInt($('.orbit-progress').width());
+      //     var $circle = $('#svg #bar');
+
+      //     if (isNaN(val)) {
+      //         val = 100;
+      //     }
+      //     else {
+      //         var r = $circle.attr('r');
+      //         var c = Math.PI*(r*2);
+
+      //         if (val < 0) { val = 0;}
+      //         if (val > 100) { val = 100;}
+
+      //         var pct = ((100-val)/100)*c;
+
+      //         $circle.css({ strokeDashoffset: pct});
+
+      //         //$('#cont').attr('data-pct', val);
+      //     }
+      // }, 100);
+
+      setInterval(function() {
+        $( "#slider-hero .slider__nav--next" ).trigger( "click" );
+        $('#slider-hero .slider__dots li').eq($('#slider-hero').attr('data-count')).find('.slider__spinner').toggleClass('active');
+      }, sliderSpeed);
+    }
+  })();
+
 })();
 
 	/////////////////
@@ -351,48 +431,48 @@
 // 		}
 // 	});
 
-/////////////////////////
-//  BROWSER DETECTION  //
-/////////////////////////
+// /////////////////////////
+// //  BROWSER DETECTION  //
+// /////////////////////////
 
-var BrowserDetect =
-{
-    init: function ()
-    {
-        this.browser = this.searchString(this.dataBrowser) || "Other";
-        this.version = this.searchVersion(navigator.userAgent) ||       this.searchVersion(navigator.appVersion) || "Unknown";
-    },
+// var BrowserDetect =
+// {
+//     init: function ()
+//     {
+//         this.browser = this.searchString(this.dataBrowser) || "Other";
+//         this.version = this.searchVersion(navigator.userAgent) ||       this.searchVersion(navigator.appVersion) || "Unknown";
+//     },
 
-    searchString: function (data)
-    {
-        for (var i=0 ; i < data.length ; i++)
-        {
-            var dataString = data[i].string;
-            this.versionSearchString = data[i].subString;
+//     searchString: function (data)
+//     {
+//         for (var i=0 ; i < data.length ; i++)
+//         {
+//             var dataString = data[i].string;
+//             this.versionSearchString = data[i].subString;
 
-            if (dataString.indexOf(data[i].subString) != -1)
-            {
-                return data[i].identity;
-            }
-        }
-    },
+//             if (dataString.indexOf(data[i].subString) != -1)
+//             {
+//                 return data[i].identity;
+//             }
+//         }
+//     },
 
-    searchVersion: function (dataString)
-    {
-        var index = dataString.indexOf(this.versionSearchString);
-        if (index == -1) return;
-        return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
-    },
+//     searchVersion: function (dataString)
+//     {
+//         var index = dataString.indexOf(this.versionSearchString);
+//         if (index == -1) return;
+//         return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+//     },
 
-    dataBrowser:
-    [
-        { string: navigator.userAgent, subString: "Chrome",  identity: "Chrome" },
-        { string: navigator.userAgent, subString: "MSIE",    identity: "Explorer" },
-        { string: navigator.userAgent, subString: "Firefox", identity: "Firefox" },
-        { string: navigator.userAgent, subString: "Safari",  identity: "Safari" },
-        { string: navigator.userAgent, subString: "Opera",   identity: "Opera" }
-    ]
+//     dataBrowser:
+//     [
+//         { string: navigator.userAgent, subString: "Chrome",  identity: "Chrome" },
+//         { string: navigator.userAgent, subString: "MSIE",    identity: "Explorer" },
+//         { string: navigator.userAgent, subString: "Firefox", identity: "Firefox" },
+//         { string: navigator.userAgent, subString: "Safari",  identity: "Safari" },
+//         { string: navigator.userAgent, subString: "Opera",   identity: "Opera" }
+//     ]
 
-};
+// };
 
-BrowserDetect.init();
+// BrowserDetect.init();

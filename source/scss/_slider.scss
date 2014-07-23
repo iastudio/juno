@@ -1,0 +1,215 @@
+#slider-hero {
+  height: 615px;
+  margin-top: -85px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
+  ul.slider__dots {
+    display: block;
+    position: absolute;
+    width: 100%; height: 20px;
+    bottom: 160px;
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 20px; height: 20px;
+      margin-right: 18px;
+      text-align: center;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .slider__spinner {
+        display: block;
+        height: 20px;
+        width: 20px;
+        border-radius: 100px;
+        border: 3px solid #5B5958;
+
+
+        &.active svg .bar {
+          stroke-dashoffset: 0;
+        }
+
+        svg {
+
+          position: relative;
+          top: -3px; left: -3px;
+
+          .bar {
+            stroke-dashoffset: 50;
+            @include transition(stroke-dashoffset 4000ms linear);
+            stroke-width: 3px;
+            stroke: #E6E6E6;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .slider__slides {
+
+    position: relative;
+
+    ul {
+
+      position: relative;
+
+      li.slider__item {
+
+        position: relative;
+        margin: 0; padding: 0;
+        list-style: none;
+        float: left;
+        width: 100%;
+        height: 615px;
+        display: none;
+
+        .container {
+          z-index: 2;
+        }
+
+        img {
+          width: 100%;
+          position: absolute;
+        }
+
+        // @media(max-width: 1200px) {
+        //   img {
+        //     width: auto;
+        //     height: 100%;
+        //   }
+        // }
+
+        .slider__content {
+          margin-top: 160px;
+          color: #fff;
+
+          .slider__content__left {
+            @include span(10/12);
+            width: 770px;
+            margin-right: 10px;
+            padding: 46px 32px;
+          }
+
+          .slider__content__right {
+            @include span(2/12);
+            width: 180px;
+            padding: 65px 45px 47px;
+            @include transition(background-color 0.2s ease-in-out);
+
+            &:hover {
+              background-color: darken(#9B9B9B, 5%);
+              background-color: rgba(0,0,0,.8);
+            }
+
+            .icon-search {
+              display: block;
+              text-align: center;
+              font-size: 60px;
+              margin-bottom: 40px;
+            }
+
+            span {
+              display: block;
+              font-size: 14px;
+              font-weight: 600;
+              line-height: 1.5;
+              text-transform: uppercase;
+            }
+          }
+
+          .slider__content__left, .slider__content__right {
+            background-color: #9B9B9B;
+            background-color: rgba(0,0,0,.4);
+            min-height: 220px;
+          }
+
+          h1 {
+            color: #fff;
+            font-size: 50px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 400;
+            line-height: 1;
+          }
+
+          p {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0;
+          }
+
+          a {
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+
+        }
+
+        &.active {
+          display: block;
+        }
+
+      }
+    }
+  }
+
+  //$margin-top: -60px;
+
+  a.slider__nav {
+    position: absolute;
+    // top: 50%;
+    margin-top: 235px;
+    z-index: 1;
+    display: block;
+    width: 55px; height: 55px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 45px;
+    line-height: 55px;
+    text-align: center;
+    cursor: pointer;
+
+    background-color: #666666;
+    background-color: rgba(0,0,0,.6);
+
+    @include transition(background-color 0.2s ease-in-out);
+
+    .fa {
+      position: relative;
+      top: -2px;
+    }
+
+    &:hover {
+      background-color: rgba(0,0,0,.8);
+      color: #fff;
+    }
+
+    &:active {
+      top: 1px;
+    }
+
+    &.slider__nav--prev {
+      left: 0px;
+      text-indent: -1px;
+    }
+
+    &.slider__nav--next {
+      right: 0px;
+      text-indent: 1px;
+    }
+  }
+
+}

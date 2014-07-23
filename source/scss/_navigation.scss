@@ -5,6 +5,8 @@
   //border-bottom: 12px solid #F7BA00;
   @include box-shadow(0 12px 0 #f7b900);
   color: #FFF;
+  position: relative;
+  z-index: 4;
 
   ul {
     li {
