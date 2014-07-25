@@ -1,3 +1,7 @@
+.full-width .navigation {
+  perspective: 0;
+}
+
 .navigation {
 
   height: 85px;
@@ -8,9 +12,16 @@
   position: relative;
   z-index: 4;
 
+  perspective: 1000px;
+
   ul {
     li {
       float: left;
+      @include transition(all .2s ease);
+      &:hover {
+        transform: rotateX(-10deg) translateZ(10px);
+        //box-shadow: 0 -2px rgba(0,0,0,.2);
+      }
       a {
         color: #FFF;
         text-decoration: none;
@@ -28,6 +39,7 @@
         @include transition(all .2s ease);
         &:hover {
           background-color: darken(#c70305, 3%);
+
           // i {
           //   @include long-shadow(text, #ab0204, 10, false);
           // }
@@ -46,5 +58,11 @@
         }
       }
     }
+  }
+}
+
+.full-width {
+  .navigation {
+    padding-left: 30px;
   }
 }

@@ -13,29 +13,31 @@ html(lang='ru').no-js
       include includes/slider
       main
         .container.content
-          h1.colored.black Специальные предложения
-          include includes/carousel
-          h1.colored.yellow О компании
+          section.special
+            h1.colored.black Специальные предложения
+            include includes/carousel
           section.about
-            .col-9-12
-              p Компания «JU-motors» ведет свою деятельность с 2005 года. В 2008 году впервые появилась идея выйти напрямую на российский рынок, воплотить в реальность которую не удалось в связи с рядом определенных причин и вскоре наступившему кризису. В настоящий момент мы преодолели все препятствия и предлагаем Вам свои услуги по покупке и доставке автомобилей, мотоциклов, спецтехники и водной техники с любых аукционов и стоянок мира
-              .icons
-                .icons__item
-                  .icons__item__icon: i.icon-mouse
-                  .icons__item__desc Удобный заказ с сайта
-                .icons__item
-                  .icons__item__icon: i.icon-support
-                  .icons__item__desc Персональный менеджер
-                .icons__item
-                  .icons__item__icon: i.icon-safe
-                  .icons__item__desc Гарантия сохранности авто
-                .icons__item
-                  .icons__item__icon: i.icon-repair
-                  .icons__item__desc Комплексная проверка
-            .col-3-12
-              .banner
-                a(href="#")
-                  img(src="i/placeholders/banner.jpg")
+            h1.colored.yellow О компании
+            div
+              .col-9-12
+                p Компания «JU-motors» ведет свою деятельность с 2005 года. В 2008 году впервые появилась идея выйти напрямую на российский рынок, воплотить в реальность которую не удалось в связи с рядом определенных причин и вскоре наступившему кризису. В настоящий момент мы преодолели все препятствия и предлагаем Вам свои услуги по покупке и доставке автомобилей, мотоциклов, спецтехники и водной техники с любых аукционов и стоянок мира
+                .icons
+                  .icons__item
+                    .icons__item__icon: i.icon-mouse
+                    .icons__item__desc Удобный заказ с сайта
+                  .icons__item
+                    .icons__item__icon: i.icon-support
+                    .icons__item__desc Персональный менеджер
+                  .icons__item
+                    .icons__item__icon: i.icon-safe
+                    .icons__item__desc Гарантия сохранности авто
+                  .icons__item
+                    .icons__item__icon: i.icon-repair
+                    .icons__item__desc Комплексная проверка
+              .col-3-12
+                .banner
+                  a(href="#")
+                    img(src="i/placeholders/banner.jpg")
           section.news
             h1.colored.yellow Новости
             .news__items

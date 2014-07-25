@@ -18,18 +18,28 @@ header {
 
   .header__phone {
     width: 200px; height: 40px;
-    float: right;
+    float: left;
     margin-top: 40px;
-    margin-right: 24px;
+    margin-left: 490px;
     small {
       font-size: 13px;
       line-height: 1;
       margin-bottom: 4px;
+      color: #000000;
     }
     h1 {
       font-size: 24px;
       font-weight: 600;
       line-height: 1;
+      color: #000000;
+    }
+  }
+}
+
+.full-width {
+  header {
+    .header__logo {
+      margin-left: 55px;
     }
   }
 }

@@ -1,3 +1,80 @@
+aside.sidebar {
+  width: 300px;
+  background-color: #f8f8f8;
+  padding: 5px 40px 40px 55px;
+  float: left;
+  position: relative;
+
+  h1 {
+    color: #2c2c2c;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 25px;
+    &:after {
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      display: block;
+      content: ' ';
+      left: 0;
+      background-color: #333333;
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        margin-bottom: 12px;
+        line-height: 1;
+        a {
+          text-decoration: none;
+          color: #666666;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.breadcrumbs {
+  display: block;
+  margin-bottom: 18px;
+  overflow: hidden;
+  ul {
+    li {
+      float: left;
+      margin-right: 24px;
+      position: relative;
+      &:after {
+        content: '\2192';
+        position: absolute;
+        right: -20px;
+        color: #666666;
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+      a {
+        font-size: 16px;
+        color: #c70406;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.content-right {
+  padding-left: 380px;
+}
+
 h1.colored {
   display: inline-block;
   color: #FFF;
@@ -17,12 +94,16 @@ h1.colored {
 }
 
 .content {
-  min-height: 1097px;
-  padding: 30px;
-  padding-bottom: 0;
+  //padding: 30px;
+  //padding-bottom: 0;
+  padding-top: 30px;
   margin-top: -140px;
   background-color: #fff;
   @include box-shadow(0 0 43px rgba(128,92,47,.35));
+}
+
+.full-width .content {
+  margin-top: 12px;
 }
 
 .col-9-12 {
@@ -76,8 +157,8 @@ section.about {
 }
 
 section.news {
-  margin-left: -30px;
-  width: 960px;
+  //margin-left: -30px;
+  //width: 960px;
   padding: 30px;
   background-color: #F7F7F7;
   overflow: hidden;
@@ -90,7 +171,7 @@ section.news {
       color: #656565;
       font-size: 12px;
       margin-bottom: 10px;
-      display: inline-block;
+      display: block;
       line-height: 1;
     }
     .news__item__title {
@@ -100,7 +181,7 @@ section.news {
       text-decoration: underline;
       text-transform: uppercase;
       margin-bottom: 17px;
-      display: inline-block;
+      display: block;
       line-height: 1.2;
       &:hover {
         text-decoration: none;
@@ -110,5 +191,35 @@ section.news {
       line-height: 1.2;
     }
   }
+}
+
+.full-width {
+  .container {
+    width: 100%;
+    min-width: 960px;
+    max-width: 100%;
+  }
+  section.news {
+    width: 100%;
+    .news__item {
+      @include col(1/4);
+    }
+  }
+  footer {
+    max-width: 1024px;
+    padding: 55px;
+  }
+  section {
+    padding: 30px 55px;
+  }
+  section.main {
+    padding-left: 0;
+    margin-bottom: 70px;
+    @include cf();
+  }
+}
+
+section {
+  padding: 0 30px;
 }
 
