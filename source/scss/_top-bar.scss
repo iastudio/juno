@@ -5,6 +5,7 @@ $top-bar-height: 47px;
   background-color: #333;
 
   nav {
+    margin-left: 5px;
     ul {
       li {
         float: left;
@@ -23,8 +24,8 @@ $top-bar-height: 47px;
           text-decoration: none;
           line-height: $top-bar-height;
           border-left: 1px solid #4A504E;
-          border-right: 1px solid #4A504E;
-          padding: 0 29px;
+          border-right: none;
+          padding: 0 0 0 51px;
 
           span {
             display: block;

@@ -13,7 +13,43 @@ html(lang='ru').no-js
       include includes/slider
       main
         .container.content
-          h1 Специальные предложения
-
+          h1.colored.black Специальные предложения
+          include includes/carousel
+          h1.colored.yellow О компании
+          section.about
+            .col-9-12
+              p Компания «JU-motors» ведет свою деятельность с 2005 года. В 2008 году впервые появилась идея выйти напрямую на российский рынок, воплотить в реальность которую не удалось в связи с рядом определенных причин и вскоре наступившему кризису. В настоящий момент мы преодолели все препятствия и предлагаем Вам свои услуги по покупке и доставке автомобилей, мотоциклов, спецтехники и водной техники с любых аукционов и стоянок мира
+              .icons
+                .icons__item
+                  .icons__item__icon: i.icon-mouse
+                  .icons__item__desc Удобный заказ с сайта
+                .icons__item
+                  .icons__item__icon: i.icon-support
+                  .icons__item__desc Персональный менеджер
+                .icons__item
+                  .icons__item__icon: i.icon-safe
+                  .icons__item__desc Гарантия сохранности авто
+                .icons__item
+                  .icons__item__icon: i.icon-repair
+                  .icons__item__desc Комплексная проверка
+            .col-3-12
+              .banner
+                a(href="#")
+                  img(src="i/placeholders/banner.jpg")
+          section.news
+            h1.colored.yellow Новости
+            .news__items
+              .news__item
+                .news__item__date 4 июля 2014
+                a.news__item__title(href="#") Chevrolet Corvette: тридцать лет и три года до встречи
+                p.news__item__text На российском рынке стартуют продажи Honda Civic в четырехдверном кузове с увеличенным до 16,5 см клиренсом.
+              .news__item
+                .news__item__date 4 июля 2014
+                a.news__item__title(href="#") Infiniti: концепт Emerg-E ждет своего часа
+                p.news__item__text Рестайлинговая модель пришла в Россию в июне прошлого года. Ее отличают более агрессивная облицовка радиатора с хромовым обрамлением снизу и дизайн задних фонарей.
+              .news__item
+                .news__item__date 4 июля 2014
+                a.news__item__title(href="#") Chevrolet Corvette: тридцать лет и три года до встречи
+                p.news__item__text Civic оснащется 1,8-литровым 16-клапанным двигателем мощностью 141 л.с. и 6-ступенчатой механической или 5-ступенчатой.
       include includes/footer
     include includes/tail

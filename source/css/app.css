@@ -99,14 +99,230 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 1, ../scss/_else.scss */
+h1.colored {
+  display: inline-block;
+  color: #FFF;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 4px 5px;
+  font-weight: 600;
+  font-size: 24px;
+}
+/* line 10, ../scss/_else.scss */
+h1.colored.black {
+  background-color: #2C2C2C;
+}
+/* line 14, ../scss/_else.scss */
+h1.colored.yellow {
+  background-color: #F7BA00;
+}
+
+/* line 19, ../scss/_else.scss */
 .content {
   min-height: 1097px;
   padding: 30px;
+  padding-bottom: 0;
   margin-top: -140px;
   background-color: #fff;
   -moz-box-shadow: 0 0 43px rgba(128, 92, 47, 0.35);
   -webkit-box-shadow: 0 0 43px rgba(128, 92, 47, 0.35);
   box-shadow: 0 0 43px rgba(128, 92, 47, 0.35);
+}
+
+/* line 28, ../scss/_else.scss */
+.col-9-12 {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 74.25%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 195, ../scss/jeet/_grid.scss */
+.col-9-12:before, .col-9-12:after {
+  content: '';
+  display: table;
+}
+/* line 199, ../scss/jeet/_grid.scss */
+.col-9-12:after {
+  clear: both;
+}
+/* line 48, ../scss/jeet/_grid.scss */
+.col-9-12:last-child {
+  margin-right: 0%;
+}
+
+/* line 32, ../scss/_else.scss */
+.col-3-12 {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 22.75%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 195, ../scss/jeet/_grid.scss */
+.col-3-12:before, .col-3-12:after {
+  content: '';
+  display: table;
+}
+/* line 199, ../scss/jeet/_grid.scss */
+.col-3-12:after {
+  clear: both;
+}
+/* line 48, ../scss/jeet/_grid.scss */
+.col-3-12:last-child {
+  margin-right: 0%;
+}
+
+/* line 36, ../scss/_else.scss */
+.col-1-3 {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 195, ../scss/jeet/_grid.scss */
+.col-1-3:before, .col-1-3:after {
+  content: '';
+  display: table;
+}
+/* line 199, ../scss/jeet/_grid.scss */
+.col-1-3:after {
+  clear: both;
+}
+/* line 48, ../scss/jeet/_grid.scss */
+.col-1-3:last-child {
+  margin-right: 0%;
+}
+
+/* line 40, ../scss/_else.scss */
+.banner {
+  position: relative;
+}
+/* line 43, ../scss/_else.scss */
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 49, ../scss/_else.scss */
+.icons {
+  *zoom: 1;
+}
+/* line 195, ../scss/jeet/_grid.scss */
+.icons:before, .icons:after {
+  content: '';
+  display: table;
+}
+/* line 199, ../scss/jeet/_grid.scss */
+.icons:after {
+  clear: both;
+}
+/* line 51, ../scss/_else.scss */
+.icons .icons__item {
+  width: 140px;
+  margin-right: 20px;
+  float: left;
+}
+/* line 55, ../scss/_else.scss */
+.icons .icons__item .icons__item__icon {
+  width: 140px;
+  height: 140px;
+  background-color: #E6E6E6;
+  font-size: 75px;
+  text-align: center;
+  line-height: 140px;
+  color: #000;
+  margin-bottom: 18px;
+}
+/* line 65, ../scss/_else.scss */
+.icons .icons__item .icons__item__desc {
+  color: #c70406;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* line 73, ../scss/_else.scss */
+section.about {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+/* line 78, ../scss/_else.scss */
+section.news {
+  margin-left: -30px;
+  width: 960px;
+  padding: 30px;
+  background-color: #F7F7F7;
+  overflow: hidden;
+}
+/* line 84, ../scss/_else.scss */
+section.news .news__items {
+  overflow: hidden;
+}
+/* line 87, ../scss/_else.scss */
+section.news .news__item {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 195, ../scss/jeet/_grid.scss */
+section.news .news__item:before, section.news .news__item:after {
+  content: '';
+  display: table;
+}
+/* line 199, ../scss/jeet/_grid.scss */
+section.news .news__item:after {
+  clear: both;
+}
+/* line 48, ../scss/jeet/_grid.scss */
+section.news .news__item:last-child {
+  margin-right: 0%;
+}
+/* line 89, ../scss/_else.scss */
+section.news .news__item .news__item__date {
+  color: #656565;
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: inline-block;
+  line-height: 1;
+}
+/* line 96, ../scss/_else.scss */
+section.news .news__item .news__item__title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+  display: inline-block;
+  line-height: 1.2;
+}
+/* line 105, ../scss/_else.scss */
+section.news .news__item .news__item__title:hover {
+  text-decoration: none;
+}
+/* line 109, ../scss/_else.scss */
+section.news .news__item .news__item__text {
+  line-height: 1.2;
 }
 
 /* line 2, ../scss/_ui.scss */
@@ -854,36 +1070,226 @@ body:after {
   opacity: 1;
 }
 
+/* line 1, ../scss/_carousel.scss */
+.carousel {
+  min-height: 300px;
+  position: relative;
+}
+/* line 5, ../scss/_carousel.scss */
+.carousel .carousel__container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+}
+/* line 12, ../scss/_carousel.scss */
+.carousel ul {
+  width: 9999px;
+  list-style: none;
+  list-style-type: none;
+  padding-left: 0 !important;
+  position: relative;
+}
+/* line 19, ../scss/_carousel.scss */
+.carousel ul li.carousel__item {
+  width: 225px;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  float: left;
+  padding: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+/* line 30, ../scss/_carousel.scss */
+.carousel ul li.carousel__item:before {
+  font-family: 'juno';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e605";
+  font-size: 60px;
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  top: -50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -30px;
+  color: #2C2C2C;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 55, ../scss/_carousel.scss */
+.carousel ul li.carousel__item:hover .carousel__item__pic, .carousel ul li.carousel__item:hover .carousel__item__desc {
+  opacity: 0.7;
+}
+/* line 58, ../scss/_carousel.scss */
+.carousel ul li.carousel__item:hover:before {
+  top: 30%;
+}
+/* line 63, ../scss/_carousel.scss */
+.carousel ul li.carousel__item .carousel__item__pic {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 205px;
+  height: 160px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+/* line 70, ../scss/_carousel.scss */
+.carousel ul li.carousel__item .carousel__item__pic img {
+  height: 160px;
+  width: auto;
+}
+/* line 79, ../scss/_carousel.scss */
+.carousel ul li.carousel__item .carousel__item__desc {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #F9F9F9;
+  text-align: left;
+  width: 205px;
+  float: left;
+  padding: 25px 0 20px 60px;
+  position: relative;
+}
+/* line 88, ../scss/_carousel.scss */
+.carousel ul li.carousel__item .carousel__item__desc:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 16px;
+  top: -16px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 16.5px 16px 16.5px;
+  border-color: transparent transparent #f9f9f9 transparent;
+}
+/* line 100, ../scss/_carousel.scss */
+.carousel ul li.carousel__item .carousel__item__desc .carousel__item__price {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #C70305;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 111, ../scss/_carousel.scss */
+.carousel ul li.carousel__item .carousel__item__desc .carousel__item__price span {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 1;
+  color: #fff;
+}
+/* line 121, ../scss/_carousel.scss */
+.carousel ul li.carousel__item .carousel__item__desc .carousel__item__price small {
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  line-height: 1;
+  color: #fff;
+}
+/* line 131, ../scss/_carousel.scss */
+.carousel ul li.carousel__item .carousel__item__desc h2 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0;
+  line-height: 1;
+}
+/* line 139, ../scss/_carousel.scss */
+.carousel ul li.carousel__item .carousel__item__desc span {
+  color: #656565;
+  font-size: 11px;
+}
+/* line 152, ../scss/_carousel.scss */
+.carousel a.carousel__nav {
+  width: 12px;
+  height: 17px;
+  position: absolute;
+  margin-top: -150px;
+  z-index: 1;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 167, ../scss/_carousel.scss */
+.carousel a.carousel__nav:hover {
+  opacity: 1;
+}
+/* line 171, ../scss/_carousel.scss */
+.carousel a.carousel__nav.carousel__nav--prev {
+  left: -15px;
+}
+/* line 175, ../scss/_carousel.scss */
+.carousel a.carousel__nav.carousel__nav--next {
+  right: -15px;
+}
+
 /* line 3, ../scss/_top-bar.scss */
 .top-bar {
   height: 47px;
   background-color: #333;
 }
-/* line 9, ../scss/_top-bar.scss */
+/* line 7, ../scss/_top-bar.scss */
+.top-bar nav {
+  margin-left: 5px;
+}
+/* line 10, ../scss/_top-bar.scss */
 .top-bar nav ul li {
   float: left;
 }
-/* line 12, ../scss/_top-bar.scss */
+/* line 13, ../scss/_top-bar.scss */
 .top-bar nav ul li.active a, .top-bar nav ul li a:hover {
   background-color: #404040;
 }
-/* line 20, ../scss/_top-bar.scss */
+/* line 21, ../scss/_top-bar.scss */
 .top-bar nav ul li.top-bar__social {
   color: #999;
   font-size: 13px;
   text-decoration: none;
   line-height: 47px;
   border-left: 1px solid #4A504E;
-  border-right: 1px solid #4A504E;
-  padding: 0 29px;
+  border-right: none;
+  padding: 0 0 0 51px;
 }
-/* line 29, ../scss/_top-bar.scss */
+/* line 30, ../scss/_top-bar.scss */
 .top-bar nav ul li.top-bar__social span {
   display: block;
   float: left;
   margin-right: 10px;
 }
-/* line 35, ../scss/_top-bar.scss */
+/* line 36, ../scss/_top-bar.scss */
 .top-bar nav ul li.top-bar__social a {
   padding: 0;
   border: none;
@@ -900,15 +1306,15 @@ body:after {
   text-align: center;
   color: #FFF;
 }
-/* line 50, ../scss/_top-bar.scss */
+/* line 51, ../scss/_top-bar.scss */
 .top-bar nav ul li.top-bar__social a:before {
   display: none;
 }
-/* line 54, ../scss/_top-bar.scss */
+/* line 55, ../scss/_top-bar.scss */
 .top-bar nav ul li.top-bar__social a:hover {
   opacity: .8;
 }
-/* line 58, ../scss/_top-bar.scss */
+/* line 59, ../scss/_top-bar.scss */
 .top-bar nav ul li.top-bar__social a.vk {
   background-color: #4d6d91;
   background-image: -moz-linear-gradient(top, #4d6d91 0%, #597b9f 100%);
@@ -916,7 +1322,7 @@ body:after {
   background-image: linear-gradient(to bottom, #4d6d91 0%, #597b9f 100%);
   text-shadow: 0 1px 0 #25436e;
 }
-/* line 63, ../scss/_top-bar.scss */
+/* line 64, ../scss/_top-bar.scss */
 .top-bar nav ul li.top-bar__social a.fb {
   background-color: #4d69a2;
   background-image: -moz-linear-gradient(top, #4d69a2 0%, #3a4b7b 100%);
@@ -924,7 +1330,7 @@ body:after {
   background-image: linear-gradient(to bottom, #4d69a2 0%, #3a4b7b 100%);
   text-shadow: 0 1px 0 #213255;
 }
-/* line 68, ../scss/_top-bar.scss */
+/* line 69, ../scss/_top-bar.scss */
 .top-bar nav ul li.top-bar__social a.tw {
   background-color: #54abed;
   background-image: -moz-linear-gradient(top, #54abed 0%, #3b88c3 100%);
@@ -932,7 +1338,7 @@ body:after {
   background-image: linear-gradient(to bottom, #54abed 0%, #3b88c3 100%);
   text-shadow: 0 1px 0 #2f6d9c;
 }
-/* line 76, ../scss/_top-bar.scss */
+/* line 77, ../scss/_top-bar.scss */
 .top-bar nav ul li a {
   color: #999;
   font-size: 13px;
@@ -947,7 +1353,7 @@ body:after {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 87, ../scss/_top-bar.scss */
+/* line 88, ../scss/_top-bar.scss */
 .top-bar nav ul li a:before {
   display: inline-block;
   margin-right: 5px;
@@ -981,7 +1387,7 @@ header .header__logo {
   width: 220px;
   height: 68px;
   margin-top: 32px;
-  margin-left: 35px;
+  margin-left: 26px;
   background-image: url(../i/logo.png);
   background-image: url(../i/logo.svg), none;
   background-size: auto;
@@ -994,7 +1400,7 @@ header .header__phone {
   height: 40px;
   float: right;
   margin-top: 40px;
-  margin-right: 45px;
+  margin-right: 24px;
 }
 /* line 24, ../scss/_header.scss */
 header .header__phone small {
@@ -1345,14 +1751,29 @@ header .header__phone h1 {
   text-shadow: 0px 0px 0 #ab0204,1px 1px 0 #ab0204,2px 2px 0 #ab0204,3px 3px 0 #ab0204,4px 4px 0 #ab0204,5px 5px 0 #ab0204,6px 6px 0 #ab0204,7px 7px 0 #ab0204,8px 8px 0 #ab0204,9px 9px 0 #ab0204,10px 10px 0 #ab0204,11px 11px 0 #ab0204,12px 12px 0 #ab0204,13px 13px 0 #ab0204,14px 14px 0 #ab0204,15px 15px 0 #ab0204,16px 16px 0 #ab0204,17px 17px 0 #ab0204,18px 18px 0 #ab0204,19px 19px 0 #ab0204,20px 20px 0 #ab0204,21px 21px 0 #ab0204,22px 22px 0 #ab0204,23px 23px 0 #ab0204,24px 24px 0 #ab0204,25px 25px 0 #ab0204,26px 26px 0 #ab0204,27px 27px 0 #ab0204,28px 28px 0 #ab0204,29px 29px 0 #ab0204,30px 30px 0 #ab0204,31px 31px 0 #ab0204,32px 32px 0 #ab0204,33px 33px 0 #ab0204,34px 34px 0 #ab0204,35px 35px 0 #ab0204,36px 36px 0 #ab0204,37px 37px 0 #ab0204,38px 38px 0 #ab0204,39px 39px 0 #ab0204,40px 40px 0 #ab0204,41px 41px 0 #ab0204,42px 42px 0 #ab0204,43px 43px 0 #ab0204,44px 44px 0 #ab0204,45px 45px 0 #ab0204,46px 46px 0 #ab0204,47px 47px 0 #ab0204,48px 48px 0 #ab0204,50px 50px 0 transparent;
 }
 
-/* line 31, ../scss/app.scss */
+/* line 1, ../scss/_footer.scss */
+footer {
+  padding: 60px 0 20px;
+}
+/* line 3, ../scss/_footer.scss */
+footer .container {
+  padding: 30px;
+  line-height: 1;
+  font-size: 14px;
+}
+/* line 9, ../scss/_footer.scss */
+footer h1, footer p {
+  margin-bottom: 2px;
+}
+
+/* line 32, ../scss/app.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 37, ../scss/app.scss */
+/* line 38, ../scss/app.scss */
 body {
   font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   background: white;
@@ -1362,84 +1783,84 @@ body {
   min-width: 1100px;
 }
 
-/* line 46, ../scss/app.scss */
+/* line 47, ../scss/app.scss */
 a[href^=tel] {
   color: inherit;
   text-decoration: none;
 }
 
 @media screen and (max-device-width: 480px) {
-  /* line 52, ../scss/app.scss */
+  /* line 53, ../scss/app.scss */
   body {
     -webkit-text-size-adjust: none;
   }
 }
-/* line 57, ../scss/app.scss */
+/* line 58, ../scss/app.scss */
 #page-wrap {
   overflow: hidden;
 }
 
-/* line 61, ../scss/app.scss */
+/* line 62, ../scss/app.scss */
 h1, h2, h3, h4, h5, p {
   color: #000;
   margin-bottom: 18px;
 }
 
-/* line 66, ../scss/app.scss */
+/* line 67, ../scss/app.scss */
 h1, h2, h3, h4, h5 {
   font-weight: bold;
 }
 
-/* line 70, ../scss/app.scss */
+/* line 71, ../scss/app.scss */
 h1 {
   font-size: 24px;
 }
 
-/* line 74, ../scss/app.scss */
+/* line 75, ../scss/app.scss */
 h2 {
   font-size: 20px;
 }
 
-/* line 78, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 h3 {
   font-size: 16px;
 }
 
-/* line 82, ../scss/app.scss */
+/* line 83, ../scss/app.scss */
 p {
   line-height: 150%;
 }
 
-/* line 86, ../scss/app.scss */
+/* line 87, ../scss/app.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 90, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 .right {
   float: right !important;
 }
 
-/* line 94, ../scss/app.scss */
+/* line 95, ../scss/app.scss */
 .left {
   float: left !important;
 }
 
-/* line 98, ../scss/app.scss */
+/* line 99, ../scss/app.scss */
 a, input, textarea, .btn {
   outline: none;
 }
 
-/* line 102, ../scss/app.scss */
+/* line 103, ../scss/app.scss */
 a {
   color: #000;
 }
-/* line 104, ../scss/app.scss */
+/* line 105, ../scss/app.scss */
 a:hover {
   color: #333333;
 }
 
-/* line 109, ../scss/app.scss */
+/* line 110, ../scss/app.scss */
 .lbox {
   display: block;
   border: 9px solid #fff;
@@ -1447,12 +1868,12 @@ a:hover {
   -webkit-box-shadow: 1px 1px 0 0 #96c4ea;
   box-shadow: 1px 1px 0 0 #96c4ea;
 }
-/* line 114, ../scss/app.scss */
+/* line 115, ../scss/app.scss */
 .lbox:hover {
   opacity: 0.9;
 }
 
-/* line 119, ../scss/app.scss */
+/* line 120, ../scss/app.scss */
 .container {
   position: relative;
   z-index: 1;
