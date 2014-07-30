@@ -105,7 +105,7 @@ $(function() {
       var itemCount = $carousel.find('.carousel__item').length;
       var itemWidth = $carousel.find('.carousel__item').eq(0).outerWidth() + 15;
       var totalWidth = itemCount * itemWidth;
-      //$carousel.find('ul').css({ width: totalWidth, marginLeft: - itemWidth });
+      $carousel.find('ul').css({ width: totalWidth, marginLeft: - itemWidth });
     });
   } else {
     $('.carousel__nav').hide();
