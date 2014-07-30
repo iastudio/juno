@@ -50,7 +50,6 @@ $(function() {
     max: 2014,
     values: [ 1994, 2007 ],
     slide: function( event, ui ) {
-      console.log(ui.values[ 0 ]);
       $(this).parent().find('.slider__year-1 strong').html(ui.values[ 0 ]);
       $(this).parent().find('.slider__year-2 strong').html(ui.values[ 1 ]);
     }
@@ -79,8 +78,6 @@ $(function() {
 
   $( ".slider" ).each( function() {
     var values = $(this).slider( "option", "values" );
-    console.log(values);
-    console.log($(this).find('.slider__year-1 strong'));
     $(this).parent().find('.slider__year-1 strong').html(values[0]);
     $(this).parent().find('.slider__year-2 strong').html(values[1]);
   });

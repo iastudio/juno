@@ -340,57 +340,57 @@ textarea {
   @include adaptive-placeholder($textarea-placeholder);
 }
 
-// .select {
-//   -webkit-appearance: none;
-//   -moz-appearance:    none;
-//   appearance:         none;
-//   height: 36px;
-//   border: 1px solid #f7b900;
-//   background-color: #fff;
-//   border-radius: 0;
-//   margin-bottom: 27px;
-//   display: block;
-//   width: 100%;
-//   max-width: 250px;
-//   outline: none;
+select {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  height: 36px;
+  border: 1px solid #f7b900;
+  background-color: #fff;
+  border-radius: 0;
+  margin-bottom: 27px;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  outline: none;
 
-//   color: #000;
-//   font-family: "PT Sans", sans-serif;
-//   font-size: 16px;
-//   font-weight: 600;
-//   padding: 0 35+16px 0 16px;
+  color: #000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 35+16px 0 16px;
 
 
-//   & + label {
-//     display: block;
-//     width: 100%;
-//     max-width: 250px;
-//     position: relative;
-//     &:after {
-//       content: ' ';
-//       display: block;
-//       width: 35px;
-//       height: 36px;
-//       background-color: #f7b900;
-//       position: absolute;
-//       top: -36-27px; right: 0;
-//       pointer-events: none;
+  & + label {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    &:after {
+      content: ' ';
+      display: block;
+      width: 35px;
+      height: 36px;
+      background-color: #f7b900;
+      position: absolute;
+      top: -36-27px; right: 0;
+      pointer-events: none;
 
-//       font-family: FontAwesome;
-//       speak: none;
-//       font-style: normal;
-//       font-weight: normal;
-//       font-variant: normal;
-//       text-transform: none;
-//       line-height: 1;
-//       -webkit-font-smoothing: antialiased;
-//       -moz-osx-font-smoothing: grayscale;
-//       content: "\f107";
+      font-family: FontAwesome;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\f107";
 
-//       color: #FFF;
-//       text-align: center;
-//       font-size: 22px;
-//       line-height: 36px;
-//     }
-//   }
-// }
+      color: #FFF;
+      text-align: center;
+      font-size: 22px;
+      line-height: 36px;
+    }
+  }
+}
