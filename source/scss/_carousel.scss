@@ -16,6 +16,7 @@
     list-style-type: none;
     padding-left: 0 !important;
     position: relative;
+    margin: 0 !important;
 
     li.carousel__item {
       width: 225px;
@@ -27,6 +28,7 @@
       text-align: center;
       position: relative;
       overflow: hidden;
+      margin-left: 0 !important;
 
       &:before {
         font-family: 'juno';

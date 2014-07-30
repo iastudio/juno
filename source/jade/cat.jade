@@ -1,0 +1,258 @@
+- var active = 1
+- var pageName = 'Автомобили со всего мира'
+include includes/settings
+doctype html
+html(lang='ru').no-js
+  head
+    include includes/head
+  body.full-width
+    .page-wrap
+      include includes/top-bar
+      include includes/header
+      include includes/navigation
+      main
+        .container.content
+          section.main
+            aside
+              .sidebar
+                h1 Авто из Японии
+                nav
+                  ul
+                    li: a(href="#") Аукционы Японии ON-LINE!
+                    li: a(href="#") Аукционы OnePrice
+                    li: a(href="#") Спецпредложения
+                    li: a(href="#") Статистика японских аукционов
+                    li: a(href="#") Калькулятор (полная пошлина)
+                    li: a(href="#") Аварийные авто
+                    li: a(href="#") Инструкция по аукционам
+                    li: a(href="#") Цены на оформление ПТС
+                    li: a(href="#") Схема работы "Полная пошлина"
+                    li: a(href="#") Схема работы "Конструктор"
+                    li: a(href="#") Определение даты выпуска
+                    li: a(href="#") Каталог авто
+              .sidebar
+                h1 Автомобили из США
+                nav
+                  ul
+                    li: a(href="#") Аукционы Японии ON-LINE!
+                    li: a(href="#") Аукционы OnePrice
+                    li: a(href="#") Спецпредложения
+                    li: a(href="#") Статистика японских аукционов
+                    li: a(href="#") Калькулятор (полная пошлина)
+                    li: a(href="#") Аварийные авто
+                    li: a(href="#") Инструкция по аукционам
+                    li: a(href="#") Цены на оформление ПТС
+                    li: a(href="#") Схема работы "Полная пошлина"
+                    li: a(href="#") Схема работы "Конструктор"
+                    li: a(href="#") Определение даты выпуска
+                    li: a(href="#") Каталог авто
+            .content-right
+              h1.colored.black Автомобили со всего мира
+              .breadcrumbs
+                ul
+                  li: a(href="#") Главная
+                  li: a(href="#") Автомобили со всего мира
+              .filter
+                .filter__col
+                  select(data-placeholder="Метод ввоза")
+                    option
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                  select(data-placeholder="Марка")
+                    option
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                  select(data-placeholder="Модель")
+                    option
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                  a.btn(href="#") Подобрать
+                .filter__col
+                  select(data-placeholder="Привод")
+                    option
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                  select(data-placeholder="Страна производитель")
+                    option
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                    option Полная пошлина
+                  .slider__container
+                    span.slider__title Год выпуска
+                    span.slider__year-1 от <strong></strong>
+                    span.slider__year-2 до <strong></strong>
+                    .slider.slider--1
+                .filter__col
+                  .slider__container
+                    span.slider__title Объем двигателя см2
+                    span.slider__year-1 от <strong></strong>
+                    span.slider__year-2 до <strong></strong>
+                    .slider.slider--2
+                  .slider__container
+                    span.slider__title Цена тыс. руб
+                    span.slider__year-1 от <strong></strong>
+                    span.slider__year-2 до <strong></strong>
+                    .slider.slider--3
+              div
+                h2 Результаты поиска: 586
+              .cat-items
+                .row
+                  .cat-item
+                    a(href="#")
+                      .cat-item__price
+                        span 940
+                        small тыс. руб.
+                      .cat-item__pic: img(src="i/placeholders/placeholder-1.jpg")
+                      .cat-item__desc
+                        .cat-item__desc__col
+                          .title Nissan Fuga
+                          span 2001 г. | 3000 см3
+                        .cat-item__desc__col Передний привод<br>Полная пошлина
+                  .cat-item
+                    a(href="#")
+                      .cat-item__price
+                        span 940
+                        small тыс. руб.
+                      .cat-item__pic: img(src="i/placeholders/placeholder-1.jpg")
+                      .cat-item__desc
+                        .cat-item__desc__col
+                          .title Nissan Fuga
+                          span 2001 г. | 3000 см3
+                        .cat-item__desc__col Передний привод<br>Полная пошлина
+                .row
+                  .cat-item
+                    a(href="#")
+                      .cat-item__price
+                        span 940
+                        small тыс. руб.
+                      .cat-item__pic: img(src="i/placeholders/placeholder-1.jpg")
+                      .cat-item__desc
+                        .cat-item__desc__col
+                          .title Nissan Fuga
+                          span 2001 г. | 3000 см3
+                        .cat-item__desc__col Передний привод<br>Полная пошлина
+                  .cat-item
+                    a(href="#")
+                      .cat-item__price
+                        span 940
+                        small тыс. руб.
+                      .cat-item__pic: img(src="i/placeholders/placeholder-1.jpg")
+                      .cat-item__desc
+                        .cat-item__desc__col
+                          .title Nissan Fuga
+                          span 2001 г. | 3000 см3
+                        .cat-item__desc__col Передний привод<br>Полная пошлина
+                .row
+                  .cat-item
+                    a(href="#")
+                      .cat-item__price
+                        span 940
+                        small тыс. руб.
+                      .cat-item__pic: img(src="i/placeholders/placeholder-1.jpg")
+                      .cat-item__desc
+                        .cat-item__desc__col
+                          .title Nissan Fuga
+                          span 2001 г. | 3000 см3
+                        .cat-item__desc__col Передний привод<br>Полная пошлина
+                  .cat-item
+                    a(href="#")
+                      .cat-item__price
+                        span 940
+                        small тыс. руб.
+                      .cat-item__pic: img(src="i/placeholders/placeholder-1.jpg")
+                      .cat-item__desc
+                        .cat-item__desc__col
+                          .title Nissan Fuga
+                          span 2001 г. | 3000 см3
+                        .cat-item__desc__col Передний привод<br>Полная пошлина
+                .row
+                  .cat-item
+                    a(href="#")
+                      .cat-item__price
+                        span 940
+                        small тыс. руб.
+                      .cat-item__pic: img(src="i/placeholders/placeholder-1.jpg")
+                      .cat-item__desc
+                        .cat-item__desc__col
+                          .title Nissan Fuga
+                          span 2001 г. | 3000 см3
+                        .cat-item__desc__col Передний привод<br>Полная пошлина
+                  .cat-item
+                    a(href="#")
+                      .cat-item__price
+                        span 940
+                        small тыс. руб.
+                      .cat-item__pic: img(src="i/placeholders/placeholder-1.jpg")
+                      .cat-item__desc
+                        .cat-item__desc__col
+                          .title Nissan Fuga
+                          span 2001 г. | 3000 см3
+                        .cat-item__desc__col Передний привод<br>Полная пошлина
+                .row
+                  .cat-item
+                    a(href="#")
+                      .cat-item__price
+                        span 940
+                        small тыс. руб.
+                      .cat-item__pic: img(src="i/placeholders/placeholder-1.jpg")
+                      .cat-item__desc
+                        .cat-item__desc__col
+                          .title Nissan Fuga
+                          span 2001 г. | 3000 см3
+                        .cat-item__desc__col Передний привод<br>Полная пошлина
+                  .cat-item
+                    a(href="#")
+                      .cat-item__price
+                        span 940
+                        small тыс. руб.
+                      .cat-item__pic: img(src="i/placeholders/placeholder-1.jpg")
+                      .cat-item__desc
+                        .cat-item__desc__col
+                          .title Nissan Fuga
+                          span 2001 г. | 3000 см3
+                        .cat-item__desc__col Передний привод<br>Полная пошлина
+              .pagination
+                ul
+                  li.active: a(href="#") 1
+                  li: a(href="#") 2
+                  li: a(href="#") 3
+                  li: a(href="#") 4
+                  li: a(href="#") 5
+
+
+
+          section.news
+            h1.colored.yellow Новости
+            .news__items
+              .news__item
+                .news__item__date 4 июля 2014
+                a.news__item__title(href="#") Chevrolet Corvette: тридцать лет и три года до встречи
+                p.news__item__text На российском рынке стартуют продажи Honda Civic в четырехдверном кузове с увеличенным до 16,5 см клиренсом.
+              .news__item
+                .news__item__date 4 июля 2014
+                a.news__item__title(href="#") Infiniti: концепт Emerg-E ждет своего часа
+                p.news__item__text Рестайлинговая модель пришла в Россию в июне прошлого года. Ее отличают более агрессивная облицовка радиатора с хромовым обрамлением снизу и дизайн задних фонарей.
+              .news__item
+                .news__item__date 4 июля 2014
+                a.news__item__title(href="#") Chevrolet Corvette: тридцать лет и три года до встречи
+                p.news__item__text Civic оснащется 1,8-литровым 16-клапанным двигателем мощностью 141 л.с. и 6-ступенчатой механической или 5-ступенчатой.
+              .news__item
+                .news__item__date 4 июля 2014
+                a.news__item__title(href="#") Chevrolet Corvette: тридцать лет и три года до встречи
+                p.news__item__text Civic оснащется 1,8-литровым 16-клапанным двигателем мощностью 141 л.с. и 6-ступенчатой механической или 5-ступенчатой.
+      include includes/footer
+    include includes/tail
