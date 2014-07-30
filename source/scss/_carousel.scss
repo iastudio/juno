@@ -1,10 +1,17 @@
+.touch .carousel .carousel__container {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 .carousel {
-  min-height: 300px;
+  min-height: 280px;
   position: relative;
+  margin-bottom: 20px;
   //padding: 0 30px;
 
   .carousel__container {
     overflow: hidden;
+
     width: 100%;
     height: 100%;
     padding: 20px 0;
