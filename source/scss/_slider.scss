@@ -8,8 +8,11 @@
 }
 
 #slider-hero {
+  float: none;
+  clear: both;
+  width: 100%;
   height: 615px;
-  margin-top: -85px;
+  top: -85px;
   overflow: hidden;
   position: relative;
   left: 0;
